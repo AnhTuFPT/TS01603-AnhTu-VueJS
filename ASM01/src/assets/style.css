@@ -1,0 +1,132 @@
+/* =========================
+   BASE
+========================= */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f3f8f5; /* xanh lá rất nhạt */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2933;
+}
+
+/* =========================
+   STICKY FOOTER LAYOUT
+========================= */
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-fill {
+  flex: 1;
+}
+
+/* =========================
+   HEADER
+========================= */
+.navbar {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.navbar-brand {
+  color: #2f855a !important; /* xanh lá đậm */
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #2d3748 !important;
+}
+
+.nav-link.active {
+  color: #2f855a !important;
+  font-weight: 600;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  max-width: 1100px;
+}
+
+/* =========================
+   CARD
+========================= */
+.card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: none;
+  box-shadow: 0 6px 20px rgba(47, 133, 90, 0.08);
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-primary {
+  background-color: #38a169;
+  border-color: #38a169;
+}
+
+.btn-primary:hover {
+  background-color: #2f855a;
+  border-color: #2f855a;
+}
+
+.btn-outline-primary {
+  color: #38a169;
+  border-color: #38a169;
+}
+
+.btn-outline-primary:hover {
+  background-color: #38a169;
+  color: #fff;
+}
+
+/* =========================
+   FORM
+========================= */
+.form-control:focus {
+  border-color: #38a169;
+  box-shadow: 0 0 0 0.15rem rgba(56, 161, 105, 0.25);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #2f855a;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* =========================
+   AVATAR
+========================= */
+.avatar-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #38a169; /* xanh lá */
+  background-color: #fff;
+}
+
+/* =========================
+   EDIT PROFILE
+========================= */
+.edit-profile-card {
+  max-width: 520px;
+}
+
+.edit-profile-card hr {
+  margin: 20px 0;
+}
+
+.btn-change-avatar {
+  padding: 6px 14px;
+}

@@ -1,0 +1,5 @@
+<template>
+  <footer class="bg-dark text-white text-center py-3">
+    © 2026 – Cafe Stories
+  </footer>
+</template>
