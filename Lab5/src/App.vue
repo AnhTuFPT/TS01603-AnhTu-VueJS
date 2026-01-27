@@ -8,10 +8,20 @@ import Bai4 from './components/Bai4.vue';
 <template>
   <div class="container">
     <h1>LAB 5</h1>
-    <!-- <Bai1 />
-    <Bai2 /> -->
-    <!-- <Bai3 /> -->
+    <Bai1 />
+    <Bai2 /> 
+    <Bai3 />
     <Bai4 />
   </div>
 </template>
+
+<style>
+.container {
+  max-width: 900px;      
+  margin: 30px auto;
+  background: #fff;
+  padding: 20px;      
+  border-radius: 6px;
+}
+</style>
 
