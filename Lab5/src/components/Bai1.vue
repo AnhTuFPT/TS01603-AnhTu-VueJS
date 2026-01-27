@@ -1,10 +1,7 @@
 <script setup>
 import { ref } from 'vue'
-
-// Biến message có giá trị ban đầu
 const message = ref('Thông điệp ban đầu')
 
-// Hàm xử lý khi bấm nút
 const updateMessage = () => {
   message.value = 'Thông điệp đã được thay đổi!'
 }
@@ -14,10 +11,8 @@ const updateMessage = () => {
   <div class="box">
     <h2>Bài 1</h2>
 
-    <!-- Hiển thị message -->
     <p>{{ message }}</p>
 
-    <!-- Nút bấm -->
     <button @click="updateMessage">
       Thay đổi thông điệp
     </button>
