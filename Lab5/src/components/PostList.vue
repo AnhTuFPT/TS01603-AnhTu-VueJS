@@ -5,40 +5,49 @@ defineProps({
 </script>
 
 <template>
-  <div v-for="(post, index) in posts" :key="index" class="post" :class="{ highlight: post.title.length > 15 }">
+  <div>
+    <h3>Danh sách bài viết</h3>
 
-  <h4 class="title">{{ post.title }}</h4>
-  <p class="author">{{ post.author }}</p>
-  <p class="content">{{ post.content }}</p>
-</div>
+    <div
+      v-for="(post, index) in posts"
+      :key="index"
+      class="post"
+    >
+      <h4 :style="{ color: post.titleColor }">
+        {{ post.title }}
+      </h4>
 
+      <p class="author">{{ post.author }}</p>
+
+      <p :style="{ color: post.contentColor }">
+        {{ post.content }}
+      </p>
+    </div>
+  </div>
 </template>
 
 <style scoped>
 .post {
   border: 1px solid #ccc;
-  padding: 14px;
+  padding: 16px;
   margin-bottom: 15px;
-  background: #222;
+  border-radius: 6px;
+  background: #fff;
 }
-.title {
-  color: #208048;
+
+.post h4 {
   font-weight: 600;
   margin-bottom: 6px;
 }
+
 .author {
-  color: #ff4d4f;
-  font-weight: 600; 
-  font-size: 15px;
-  margin-bottom: 8px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-}
-.content {
-  color: #ffffff;
-  line-height: 1.5;
-}
-.highlight {
-  border: 2px solid orange;
+  color: red;
+  font-weight: 600;
+  margin-bottom: 6px;
 }
 
+.post p {
+  font-size: 14px;
+  line-height: 1.5;
+}
 </style>
