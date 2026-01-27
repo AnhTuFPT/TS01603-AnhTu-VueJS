@@ -1,17 +1,14 @@
 <script setup>
 import { ref } from 'vue'
-// Biến nhận dữ liệu từ input
 const userInput = ref('')
 </script>
 
 <template>
   <div class="box">
     <h2>Bài 2</h2>
-    <!-- Input dùng v-model -->
     <input
       v-model="userInput"
       placeholder="Nhập dữ liệu vào đây"/>
-    <!-- Hiển thị giá trị realtime -->
     <p>Giá trị bạn nhập: {{ userInput }}</p>
   </div>
 </template>
