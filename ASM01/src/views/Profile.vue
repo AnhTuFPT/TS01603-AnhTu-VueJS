@@ -17,8 +17,7 @@
 
         <RouterLink
           to="/profile/edit"
-          class="btn btn-outline-primary btn-sm"
-        >
+          class="btn btn-outline-primary btn-sm">
           Chỉnh sửa thông tin
         </RouterLink>
       </div>
@@ -33,6 +32,5 @@ const name = ref('Anh Tú')
 const email = ref('anhtu@gmail.com')
 
 const avatar = ref(
-  new URL('../assets/image/meomeo.jpg', import.meta.url).href
-)
+  new URL('../assets/image/meomeo.jpg', import.meta.url).href)
 </script>
