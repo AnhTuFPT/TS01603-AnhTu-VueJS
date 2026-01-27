@@ -1,6 +1,5 @@
 <script setup>
 import { reactive } from 'vue'
-// Đối tượng thông tin cá nhân
 const userInfo = reactive({
   name: '',
   age: '',
@@ -11,7 +10,6 @@ const userInfo = reactive({
   <div class="box">
     <h2>Bài 3</h2>
 
-    <!-- Form nhập liệu -->
     <div class="form-group">
       <label>Họ và tên:</label>
       <input
@@ -41,7 +39,6 @@ const userInfo = reactive({
 
     <hr />
 
-    <!-- Hiển thị thông tin ngay khi nhập -->
     <div class="info">
       <h3>Thông tin đã nhập:</h3>
       <p><b>Họ và tên:</b> {{ userInfo.name }}</p>
@@ -65,7 +62,7 @@ input {
   padding: 6px;
 }
 .info {
-  background: #000000;
+  background: #ffffff;
   padding: 10px;
 }
 </style>
